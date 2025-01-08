@@ -1,0 +1,67 @@
+%YAML 1.2
+---
+name: Luís Arthur Dornelas
+title: JUNIOR DEVELOPER
+contact:
+  email: ladccc@cesar.school
+
+about: Desenvolvedor júnior com experiência em trabalhar com equipes multidisciplinares na ideação e realização de projetos.
+quote: Tenho interesse em atuar com programadores mais experientes com a finalidade de desenvolver projetos desafiadores utilizando novas tecnologias.
+
+skills: [ Python, C/C#, JavaScript/TypeScript, Ruby on Rails, Docker, HTML/CSS, Angular, Java, .NET, SQL, AWS, Linux, Windows, Metodologias Ágeis, Pacote Office ]
+
+entries:
+- type: job
+  title: SOFTWARE TESTER
+  org: testRigor
+  date: "2024"
+  desc: Desenvolvimento de testes automatizados utilizando IA. Atuação nos testes internos e com diversos clientes internacionais
+  uses: Utilizando plataforma própria da empresa
+
+- type: job
+  title: DEV FULL-STACK
+  org: Visagio
+  date: "2023"
+  desc: Manutenção de plataforma de rastreamento de remessas de produtos, tendo como cliente uma das maiores multinacionais de bens de consumo
+  uses: Utilizando Ruby on Rails, ElasticSearch e AWS
+
+- type: job
+  title: DEV FULL-STACK
+  org: Visagio
+  date: "2022"
+  desc: Desenvolvimento de aplicação de reparação de danos ambientais, tendo como cliente uma das maiores mineradoras do país.
+  uses: O framework utilizado foi Angular, TypeScript, HTML e CSS no Front, .NET no Back e armazenamento com SQL
+
+- type: proj
+  title: WEBSCRAPPER
+  org: Intuitive Care
+  date: "2021"
+  desc: Atuação em extração de dados relativos à pagamentos de contas hospitalares por parte dos planos de saúde
+  uses: Utilizando Java, armazenando dados com SQL e operando pipelines da AWS
+
+- type: proj
+  title: QUÓRUM
+  org: Foz - Centro de Inovação em Saúde e Educação
+  date: "2021"
+  desc: Criação de uma plataforma que ajude a integrar os jobissionais da área da saúde com os setores de tecnologia e inovação
+  uses: Utilizando SQL, Python, HTML e CSS
+
+- type: edu
+  org: CESAR School
+  date: "2019 - 2024"
+  desc: Bacharelado em Ciências da Computação
+
+- type: cert
+  org: OPEI
+  date: "2018"
+  desc: 3° lugar geral na Olimpíada Pernambucana de Informática, organizada pelo CIn/UFPE
+
+- type: cert
+  org: FCE - Cambridge
+  date: "2018"
+  desc: Nível de Inglês B2, segundo o CEFR
+
+- type: edu
+  org: Colégio Motivo
+  date: "2012 - 2018"
+  desc: Ensino Médio completo
