@@ -1,16 +1,5 @@
 %YAML 1.2
 ---
-name: Luís Arthur Dornelas
-title: JUNIOR DEVELOPER
-contact:
-  email: ladccc@cesar.school
-
-about: Desenvolvedor júnior com experiência em trabalhar com equipes multidisciplinares na ideação e realização de projetos.
-quote: Tenho interesse em atuar com programadores mais experientes com a finalidade de desenvolver projetos desafiadores utilizando novas tecnologias.
-
-skills: [ Python, C/C#, JavaScript/TypeScript, Ruby on Rails, Docker, HTML/CSS, Angular, Java, .NET, SQL, AWS, Linux, Windows, Metodologias Ágeis, Pacote Office ]
-
-entries:
 - type: job
   title: SOFTWARE TESTER
   org: testRigor
