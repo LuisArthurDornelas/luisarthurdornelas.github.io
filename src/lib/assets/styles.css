@@ -1,49 +1,97 @@
-body {
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+.margin-reset {
     margin: 0;
+}
+
+body,
+header,
+.bg-back {
     background: #101010
+}
+.bg-main {
+    background: #EFEFEF;
+}
+.bg-accent {
+    background: #FFBD59
+}
+
+body,
+.type-body {
+    font-family: 'Noto Sans', serif;
+}
+h1,
+h2,
+h3,
+.type-display {
+    font-family: 'League Spartan', sans-serif;
 }
 
 h1,
 h2,
-h3 {
-    margin: 0;
-    margin-top: 20px;
-    font-family: 'League Spartan', sans-serif;
+h3,
+.font-bold {
     font-weight: bold;
 }
-
-p,
-ul {
-    margin: 0;
-    font-family: 'Noto Sans', serif;
-    font-size: 1.1rem;
+.font-italic {
+    font-style: italic;
 }
 
-h1 {
+.font-xsmall {
+    font-size: 1rem;
+}
+body,
+.font-small {
+    font-size: 1.1rem;
+}
+h3,
+.font-medium {
+    font-size: 1.3rem;
+}
+.font-large {
+    font-size: 1.5rem;
+}
+h2,
+.font-xlarge {
+    font-size: 2.2rem;
+}
+h1,
+.font-xxlarge {
     font-size: 3rem;
 }
 
-h2 {
-    font-size: 2.2rem;
+.text-color-light {
+    color: #EFEFEF
+}
+body,
+.text-color-dark {
+    color: #101010
 }
 
-h3 {
-    font-size: 1.3rem;
+.text-end {
+    text-align: end;
+}
+.text-center {
+    text-align: center;
 }
 
-.subtitle {
-    font-size: 1.5rem;
-    letter-spacing: 0.2rem;
+.flex {
+    display: flex;
+}
+.flex-center {
+    align-items: center;
+    justify-content: center;
 }
 
-.small {
-    font-size: 1rem;
-}
-
-.profile {
-    margin: 15px;
+.circle {
     aspect-ratio: 1;
-    object-fit: cover;
     border-radius: 100%;
-    border: solid white 10px;
+}
+
+.border-white {
+    border: solid white 5px;
 }

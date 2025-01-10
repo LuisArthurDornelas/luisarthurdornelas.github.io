@@ -9,10 +9,22 @@
 		{#if e.title}
 			<h3>{e.title}</h3>
 		{/if}
-		<p><b>{e.org}, {e.date}</b></p>
-		<p>{e.desc}</p>
+		<p class="org font-bold">{e.org}, {e.date}</p>
+		<p class="font-xsmall">{e.desc}</p>
 		{#if e.uses}
-			<p><i>{e.uses}</i></p>
+			<p class="font-italic font-xsmall">{e.uses}</p>
 		{/if}
 	</article>
 {/each}
+
+<style>
+	p {
+		margin: 5px;
+	}
+	article {
+		margin-top: 20px;
+	}
+	.org {
+		margin-top: 0;
+	}
+</style>

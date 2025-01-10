@@ -4,15 +4,21 @@
 	import profilePic from '$lib/assets/profile.jpg';
 </script>
 
-<header>
+<header class="flex flex-center text-end text-color-light">
+	<img
+		class="profile circle border-white"
+		src={profilePic}
+		alt="Foto de Luís"
+		style="width: 200px"
+	/>
 	<div>
 		<h1>Luís Arthur Dornelas</h1>
 		<p class="subtitle">JUNIOR DEVELOPER</p>
 	</div>
-	<img class="profile" src={profilePic} alt="Foto de Luís" style="width: 200px" />
 </header>
-<main>
-	<div class="rcol">
+
+<main class="flex">
+	<div class="rcol bg-accent text-color-dark">
 		<section id="contact">
 			<h2>Contato</h2>
 			<p><b>Email:</b> ladccc@cesar.school</p>
@@ -20,19 +26,17 @@
 		<section id="about">
 			<h2>Sobre mim</h2>
 			<p>
-				Desenvolvedor júnior com experiência em trabalhar com equipes multidisciplinares na ideação
-				e realização de projetos.
+				Desenvolvedor júnior com experiência em equipes multidisciplinares na ideação e realização
+				de projetos.
 			</p>
-			<p>
-				<i>
-					Tenho interesse em atuar com programadores mais experientes com a finalidade de
-					desenvolver projetos desafiadores utilizando novas tecnologias.
-				</i>
+			<p class="font-xsmall font-italic">
+				"Tenho interesse em atuar com programadores mais experientes com a finalidade de desenvolver
+				projetos desafiadores utilizando novas tecnologias."
 			</p>
 		</section>
 		<section id="skills">
 			<h2>Habilidades</h2>
-			<ul>
+			<ul class="font-xsmall">
 				<li>Python</li>
 				<li>C/C#</li>
 				<li>JavaScript/TypeScript</li>
@@ -51,7 +55,7 @@
 			</ul>
 		</section>
 	</div>
-	<div class="lcol">
+	<div class="lcol bg-main text-color-dark">
 		<section id="experiences">
 			<h2>Atuação e projetos</h2>
 			<Entries type={['job', 'proj']} />
@@ -62,51 +66,61 @@
 		</section>
 	</div>
 </main>
-<footer>
-	<p class="small">Website desenhado e desenvolvido por Kalil Cabral com SvelteKit</p>
-	<p class="small">Copyright ©2024-2025 Luís Arthur Dornelas | Todos os direitos reservados</p>
+
+<footer class="bg-back text-center text-color-light">
+	<p class="font-xsmall">Website desenhado e desenvolvido por Kalil Cabral com SvelteKit</p>
+	<p class="font-xsmall">
+		Copyright ©2024-2025 Luís Arthur Dornelas | Todos os direitos reservados
+	</p>
 </footer>
 
 <style>
-	header {
-		background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('$lib/assets/bg.jpg'),
-			#101010;
-		padding: 20px;
-
-		color: white;
-		text-align: end;
-
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap-reverse;
-		align-items: center;
-		justify-content: center;
-	}
 	header,
-	main {
-		max-width: 1000px;
+	main,
+	footer {
+		max-width: 1080px;
 		margin: auto;
 	}
-	main {
-		display: flex;
+
+	header {
+		background: linear-gradient(rgba(0, 0, 0, 0.53), rgba(0, 0, 0, 0.53)),
+			url('$lib/assets/bg.jpg'), #101010;
+		padding: 20px;
+		box-sizing: border-box;
+	}
+	.subtitle {
+		letter-spacing: 0.2rem;
+	}
+	.profile {
+		margin: 15px;
+		object-fit: cover;
+	}
+
+	main,
+	header {
 		flex-direction: row-reverse;
 		flex-wrap: wrap;
 	}
-	main > * {
-		padding: 20px;
-	}
 	.rcol {
-		flex: 1;
-		background: orange;
+		flex: 2;
 	}
 	.lcol {
-		flex: 2;
-		background: #fff;
+		flex: 3;
 	}
+
 	footer {
-		color: #fff;
-		text-align: center;
-		line-height: 180%;
 		padding: 10px 0;
+	}
+
+	h1,
+	h2 {
+		margin-top: 20px;
+	}
+	main > * {
+		padding: 20px;
+		margin-top: 10px;
+	}
+	p {
+		margin: 5px 0;
 	}
 </style>
