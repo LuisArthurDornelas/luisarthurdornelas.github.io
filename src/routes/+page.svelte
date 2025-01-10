@@ -2,6 +2,7 @@
 	import Entries from '$lib/components/entries.svelte';
 	import bgImg from '$lib/assets/bg.jpg';
 	import profilePic from '$lib/assets/profile.jpg';
+	import ChipList from '$lib/components/chipList.svelte';
 </script>
 
 <header class="flex flex-center text-end text-color-light">
@@ -36,23 +37,25 @@
 		</section>
 		<section id="skills">
 			<h2>Habilidades</h2>
-			<ul class="font-xsmall">
-				<li>Python</li>
-				<li>C/C#</li>
-				<li>JavaScript/TypeScript</li>
-				<li>Ruby on Rails</li>
-				<li>Docker</li>
-				<li>HTML/CSS</li>
-				<li>Angular</li>
-				<li>Java</li>
-				<li>.NET</li>
-				<li>SQL</li>
-				<li>AWS</li>
-				<li>Linux</li>
-				<li>Windows</li>
-				<li>Metodologias Ágeis</li>
-				<li>Pacote Office</li>
-			</ul>
+			<ChipList
+				items={[
+					'Python',
+					'C/C#',
+					'JavaScript/TypeScript',
+					'Ruby on Rails',
+					'Docker',
+					'HTML/CSS',
+					'Angular',
+					'Java',
+					'.NET',
+					'SQL',
+					'AWS',
+					'Linux',
+					'Windows',
+					'Metodologias Ágeis',
+					'Pacote Office'
+				]}
+			/>
 		</section>
 	</div>
 	<div class="lcol bg-main text-color-dark">
@@ -118,7 +121,6 @@
 	}
 	main > * {
 		padding: 20px;
-		margin-top: 10px;
 	}
 	p {
 		margin: 5px 0;
