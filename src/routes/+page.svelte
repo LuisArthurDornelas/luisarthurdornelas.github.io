@@ -4,10 +4,12 @@
 	import profilePic from '$lib/assets/profile.jpg';
 </script>
 
-<header style="background: url({bgImg}); color: white">
-	<h1>Luís Arthur Dornelas</h1>
-	<p>JUNIOR DEVELOPER</p>
-	<img src={profilePic} alt="Foto de Luís" style="width: 200px" />
+<header>
+	<div>
+		<h1>Luís Arthur Dornelas</h1>
+		<p class="subtitle">JUNIOR DEVELOPER</p>
+	</div>
+	<img class="profile" src={profilePic} alt="Foto de Luís" style="width: 200px" />
 </header>
 <main>
 	<div class="rcol">
@@ -61,6 +63,50 @@
 	</div>
 </main>
 <footer>
-	<p>Website desenhado e desenvolvido por Kalil Cabral com Svelte</p>
-	<p>Copyright ©2024-2025 Luís Arthur Dornelas | Todos os direitos reservados</p>
+	<p class="small">Website desenhado e desenvolvido por Kalil Cabral com SvelteKit</p>
+	<p class="small">Copyright ©2024-2025 Luís Arthur Dornelas | Todos os direitos reservados</p>
 </footer>
+
+<style>
+	header {
+		background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('$lib/assets/bg.jpg'),
+			#101010;
+		padding: 20px;
+
+		color: white;
+		text-align: end;
+
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap-reverse;
+		align-items: center;
+		justify-content: center;
+	}
+	header,
+	main {
+		max-width: 1000px;
+		margin: auto;
+	}
+	main {
+		display: flex;
+		flex-direction: row-reverse;
+		flex-wrap: wrap;
+	}
+	main > * {
+		padding: 20px;
+	}
+	.rcol {
+		flex: 1;
+		background: orange;
+	}
+	.lcol {
+		flex: 2;
+		background: #fff;
+	}
+	footer {
+		color: #fff;
+		text-align: center;
+		line-height: 180%;
+		padding: 10px 0;
+	}
+</style>
